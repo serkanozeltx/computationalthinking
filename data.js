@@ -14,7 +14,7 @@ const questions = [
   },
   {
     id: 2,
-    images: ["images/img_1.png", "images/img_2.png", "images/img_3.png", "images/img_4.png", "images/img_5.png"],
+    images: ["images/img_1.png"],
     tr: {
       text: "Zeynep, parkta kaybolan bir çocuğu aramaktadır. Çocuğu bulabilmek için parktaki 5 farklı kişiden çocuğun resmini çizmelerini istemiştir.<br/><br/><strong>Zeynep’in, çizilen 5 farklı resme göre kaybolan çocuk hakkında yaptığı yorumlardan hangisi kesinlikle doğrudur?</strong>",
       options: ["Kahverengi bir kıyafeti vardır.", "Elinde tenis raketi vardır.", "Kahverengi ayakkabı giymektedir.", "Sarı saçlıdır."]
