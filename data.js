@@ -404,5 +404,4 @@ const questionsPart2 = [
   }
 ];
 
-export default questionsPart2;
-export default [...questions, ...questionsPart2];
+window.questions = [...questions, ...questionsPart2];

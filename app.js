@@ -1,4 +1,4 @@
-import questions from './data.js';
+// Global questions array generated from data.js
 
 // DOM Elements
 const views = {
