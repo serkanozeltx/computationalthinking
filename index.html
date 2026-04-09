@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computational Thinking Test</title>
+  <meta name="description" content="Interactive bilingual Computational Thinking Test for students.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="background-blob shape-1"></div>
+  <div class="background-blob shape-2"></div>
+  <div class="background-blob shape-3"></div>
+
+  <main class="app-container">
+    <header class="app-header">
+      <h1 id="site-title">Computational Thinking Test</h1>
+      
+      <div class="header-controls">
+        <div class="progress-bar-container">
+          <div class="progress-info">
+            <span id="progress-text">Progress: 1/17</span>
+          </div>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="lang-toggle">
+          <input type="checkbox" id="language-switch" class="lang-checkbox">
+          <label for="language-switch" class="lang-label">
+            <span class="lang-en">EN</span>
+            <span class="lang-tr">TR</span>
+            <span class="lang-slider"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <section id="welcome-screen" class="view-section active">
+      <div class="glass-card welcome-card">
+        <h2 id="welcome-title">Welcome to the Computational Thinking Test</h2>
+        <p id="welcome-desc">This interactive test will evaluate your logical reasoning and problem-solving skills across various scenarios. You can switch between Turkish and English at any time.</p>
+        <button id="start-btn" class="btn primary-btn">Start Test</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="view-section hidden">
+      <div class="glass-card question-card">
+        <div id="images-container" class="images-container">
+          <!-- Images injected here dynamically -->
+        </div>
+        
+        <div id="question-text" class="question-text">
+          <!-- Text injected here dynamically -->
+        </div>
+
+        <div id="options-container" class="options-container">
+          <!-- Options injected here dynamically -->
+        </div>
+
+        <div class="card-footer">
+          <button id="prev-btn" class="btn secondary-btn" disabled>Previous</button>
+          <button id="next-btn" class="btn primary-btn">Next</button>
+          <button id="finish-btn" class="btn success-btn hidden">Finish Test</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="results-screen" class="view-section hidden">
+      <div class="glass-card results-card">
+        <h2 id="results-title">Test Complete!</h2>
+        <div class="score-circle">
+          <span id="score-value">0</span>
+          <span class="score-total" id="score-out-of">/ 17</span>
+        </div>
+        <p id="results-message">Great job completing the test.</p>
+        <button id="restart-btn" class="btn primary-btn">Restart Test</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

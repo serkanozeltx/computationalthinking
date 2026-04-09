@@ -1,0 +1,14 @@
+# Environments
+venv/
+
+# Source and intermediate artifacts
+CT Test_final*.docx
+extracted_docx/
+extracted_mammoth.html
+clean_test.html
+extracted/
+extract.py
+clean_html.py
+
+# OS generated files
+.DS_Store
